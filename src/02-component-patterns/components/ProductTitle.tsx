@@ -4,7 +4,7 @@ import styles from "../styles/styles.module.css";
 
 export interface Props{
     title?:string,
-    className?: string
+    className?: string,
 }
 export const ProductTitle = ({ title, className }: Props) => {
 
