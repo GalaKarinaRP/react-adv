@@ -1,19 +1,15 @@
+# TSDX React User Guide
+
+```
+
 import {
   ProductButtons,
   ProductCard,
   ProductImage,
   ProductTitle,
 } from "../components";
-import { products } from "../data/products";
 
-const ShoppingPage = () => {
-  const product = products[0];
-
-  return (
-    <div>
-      <h1>Shopping page</h1>
-      <hr />
-
+```
       <ProductCard
         key={product.id}
         product={product}
@@ -31,8 +27,5 @@ const ShoppingPage = () => {
           </>
         )}
       </ProductCard>
-    </div>
-  );
-};
 
-export default ShoppingPage;
+      ```
