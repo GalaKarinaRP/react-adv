@@ -1,5 +1,7 @@
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import logo from '../logo.svg'
+import { FormikAbstractation, FormikBasicPage, FormikComponent, RegisterPage } from "../03-forms/pages";
+
 const Navigation = () => {
   return (
     <BrowserRouter>
@@ -8,21 +10,26 @@ const Navigation = () => {
             <img src={logo} alt="" />
             <ul>
                 <li>
-                    <NavLink to="/home" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Home</NavLink>
+                    <NavLink to="/register" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Register</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>About</NavLink>
+                    <NavLink to="/formik-basic" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Formik basic</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/home" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Home</NavLink>
+                    <NavLink to="/formik-component" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Formik component</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/formik-abstractation" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Formik abstractation</NavLink>
                 </li>
             </ul>
         </nav>
 
         <Routes>
-            <Route path="/about" element={<h1>About page</h1>} />
-            <Route path="/users" element={<h1>Users page</h1>} />
-            <Route path="/home" element={<h1>Home page</h1>} />
+            <Route path="/register" element={<RegisterPage/>} />
+            <Route path="/formik-basic" element={<h1><FormikBasicPage/></h1>} />
+            <Route path="/formik-component" element={<FormikComponent/>} />
+            <Route path="/formik-abstractation" element={<FormikAbstractation/>} />
+
 
 
         </Routes>
