@@ -1,0 +1,57 @@
+[{
+    "type": "input",
+    "name": "firstName",
+    "placeholder": "Fernando",
+    "label": "First name",
+    "value": "",
+    "validations":[{
+        "type":"required"
+    }]
+},
+{
+    "type": "input",
+    "name": "lastName",
+    "placeholder": "Herrera",
+    "label": "Last name",
+    "value": "",
+    "validations":[{
+        "type":"required"
+    }]
+},
+{
+    "type": "email",
+    "name": "email",
+    "placeholder": "gala@gmail.com",
+    "label": "Email",
+    "value": "",
+    "validations":[{
+        "type":"required"
+    }]
+},
+{
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "value": "",
+    "options":
+    [
+        {
+            "id":1,
+            "label":"San Andres"
+        }, 
+        {
+            "id":2,
+            "label":"Resident Evil"
+        },
+        {
+            "id":3,
+            "label":"Call of dutty"
+        }
+    ],
+    "validations":[{
+        "type":"required"
+    }]
+}
+
+
+]
